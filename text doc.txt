@@ -1,0 +1,20 @@
+https://londonappdeveloper.com/how-to-ask-questions-on-stack-overflow-and-get-answers/
+
+https://chocolatey.org/
+https://docs.docker.com/desktop/
+https://github.com/
+
+https://codechecker.app/checker/londonappdev/start/recipe-app-api-2/s-05-project-setup-02-create-github-project/
+
+
+// command for running the linting tootl
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+
+docker-compose run --rm app sh -c "flake8" 
+
+docker-compose run --rm app sh -c "django-admin startproject app .";
+
+docker compose up
+
+docker run -it <image-name> sh
+docker run -it <image-name>
