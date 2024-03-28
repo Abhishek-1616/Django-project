@@ -6,12 +6,12 @@ https://github.com/
 
 https://codechecker.app/checker/londonappdev/start/recipe-app-api-2/s-05-project-setup-02-create-github-project/
 
-# new url have been posted 
+# new url have been posted
 
 // command for running the linting tootl
 https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 
-docker-compose run --rm app sh -c "flake8" 
+docker-compose run --rm app sh -c "flake8"
 
 
 docker-compose run --rm app sh -c "django-admin startproject app .";
@@ -24,3 +24,22 @@ docker compose up
 
 docker run -it <image-name> sh
 docker run -it <image-name>
+
+docker volume ls
+docker volume rm <volume_name>
+then do,
+docker compose down
+then again run,
+docker volume rm <volume_name>
+
+//notes
+https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.models.AbstractBaseUser.check_password
+https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.get_user_model
+https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#reversing-admin-urls
+https://docs.djangoproject.com/en/3.2/topics/testing/tools/#overview-and-a-quick-example
+// migrations
+docker-compose run --rm app sh -c "python manage.py makemigrations"
+docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"
+
+// create super user
+docker-compose run --rm app sh -c "python manage.py createsuperuser"
